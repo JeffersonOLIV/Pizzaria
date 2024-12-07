@@ -1,0 +1,35 @@
+body {
+    font-family: monospace;
+    margin: 10;
+    padding: 30;
+    font-size: 100%;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+
+}
+
+.site-header {
+    background-color: rgb(255, 193, 78);
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-header ul {
+list-style-type: none;
+padding: 0;
+display: flex;
+gap: 20px
+}
+
+.button-header li {
+    display: inline;
+}
+
+.button-header ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 20px 10px;
+    border-radius: 5px;
+}

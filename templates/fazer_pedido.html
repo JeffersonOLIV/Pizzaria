@@ -1,0 +1,34 @@
+{% extends "modelo.html" %}
+{%block conteudo%}
+    <form action="/fazer_pedido" method="post">
+        <label>Tipo da Massa: </label>
+        <select name="massa" id="">
+            <option value="">Massa Fina</option>
+            <option value="">Massa Grossa</option>
+            <option value="">Massa Carvão</option>
+        </select>
+        <br>
+            <label>Tipo da Borda: </label>
+        <select name="borda" id="">
+            <option value="">Sem Borda</option>
+            <option value="">Borda Cheedar/option>
+            <option value="">Borda Chocolate</option>
+            <option value="">Borda Cream & Cheese</option>
+        </select>
+        <br>
+        <label>Molho: </label>
+        <select name="molho" id="">
+        <option value="">Molho de Tomate</option>
+        <option value="">Sem Molho</option>
+        </select>
+        <br>
+        <label>Queijo: </label>
+        <select name="queijo" id="">
+        <option value="">Cheedar</option>
+        <option value="">Mussarela</option>
+        <option value="">Coalho</option>
+        </select>
+        <br>
+        
+    </form>
+{%endblock%}
