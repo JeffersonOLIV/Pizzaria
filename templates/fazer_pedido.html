@@ -1,34 +1,46 @@
-{% extends "modelo.html" %}
-{%block conteudo%}
-    <form action="/fazer_pedido" method="post">
-        <label>Tipo da Massa: </label>
-        <select name="massa" id="">
-            <option value="">Massa Fina</option>
-            <option value="">Massa Grossa</option>
-            <option value="">Massa Carvão</option>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazer Pedido</title>
+</head>
+<body>
+    <h1>Fazer Pedido</h1>
+    <form action="/fazer_pedido" method="POST">
+        <label for="massa">Tipo da Massa: </label>
+        <select name="massa" id="massa">
+            <option value="massa_fina">Massa Fina</option>
+            <option value="massa_grossa">Massa Grossa</option>
+            <option value="massa_carvao">Massa Carvão</option>
         </select>
         <br>
-            <label>Tipo da Borda: </label>
-        <select name="borda" id="">
-            <option value="">Sem Borda</option>
-            <option value="">Borda Cheedar/option>
-            <option value="">Borda Chocolate</option>
-            <option value="">Borda Cream & Cheese</option>
+
+        <label for="borda">Tipo da Borda: </label>
+        <select name="borda" id="borda">
+            <option value="sem_borda">Sem Borda</option>
+            <option value="borda_cheedar">Borda Cheedar</option>
+            <option value="borda_chocolate">Borda Chocolate</option>
+            <option value="borda_cream_cheese">Borda Cream & Cheese</option>
         </select>
         <br>
-        <label>Molho: </label>
-        <select name="molho" id="">
-        <option value="">Molho de Tomate</option>
-        <option value="">Sem Molho</option>
+
+        <label for="molho">Molho: </label>
+        <select name="molho" id="molho">
+            <option value="molho_tomate">Molho de Tomate</option>
+            <option value="sem_molho">Sem Molho</option>
         </select>
         <br>
-        <label>Queijo: </label>
-        <select name="queijo" id="">
-        <option value="">Cheedar</option>
-        <option value="">Mussarela</option>
-        <option value="">Coalho</option>
+
+        <label for="queijo">Queijo: </label>
+        <select name="queijo" id="queijo">
+            <option value="cheedar">Cheedar</option>
+            <option value="mussarela">Mussarela</option>
+            <option value="coalho">Coalho</option>
         </select>
         <br>
-        
+
+        <button type="submit">Fazer Pedido</button>
     </form>
-{%endblock%}
+</body>
+</html>
